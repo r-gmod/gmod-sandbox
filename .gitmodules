@@ -1,12 +1,12 @@
 [submodule "addons/ulib"]
 	path = addons/ulib
-	url = git@github.com:TeamUlysses/ulib.git
+	url = https://github.com/TeamUlysses/ulib.git
 [submodule "addons/ulx"]
 	path = addons/ulx
-	url = git@github.com:TeamUlysses/ulx.git
+	url = https://github.com/TeamUlysses/ulx.git
 [submodule "addons/URS"]
 	path = addons/URS
-	url = git@github.com:Aaron113/URS.git
+	url = https://github.com/Aaron113/URS.git
 [submodule "addons/EPOE"]
 	path = addons/EPOE
-	url = git@github.com:Metastruct/EPOE.git
+	url = https://github.com/Metastruct/EPOE.git
