@@ -10,3 +10,9 @@
 [submodule "addons/EPOE"]
 	path = addons/EPOE
 	url = https://github.com/Metastruct/EPOE.git
+[submodule "addons/pac3"]
+	path = addons/pac3
+	url = https://github.com/CapsAdmin/pac3.git
+[submodule "addons/Falcos-Prop-protection"]
+	path = addons/Falcos-Prop-protection
+	url = https://github.com/FPtje/Falcos-Prop-protection.git
