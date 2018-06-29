@@ -16,3 +16,6 @@
 [submodule "addons/Falcos-Prop-protection"]
 	path = addons/Falcos-Prop-protection
 	url = https://github.com/FPtje/Falcos-Prop-protection.git
+[submodule "addons/customisable_thirdperson"]
+	path = addons/customisable_thirdperson
+	url = https://github.com/CapsAdmin/customisable_thirdperson.git
