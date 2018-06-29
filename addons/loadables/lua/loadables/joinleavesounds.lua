@@ -3,15 +3,14 @@ if SERVER then
 	hook.Add( "PlayerInitialSpawn", "ZeagaPlayerJoin", function( ply )
 		net.Start( "ZeagaPlayerAttendance" ) -- We send the team/name and not the entity because it may not yet exist on the clients.
 			net.WriteBool( true )
-			net.WriteUInt( ply:Team( ), 4 )
+			net.WriteUInt( ply:Team( ), 32 )
 			net.WriteString( ply:Name( ) )
 		net.Broadcast( )
 	end )
-	util.AddNetworkString( "ZeagaPlayerLeave" )
 	hook.Add( "PlayerDisconnected", "ZeagaPlayerLeave", function( ply )
 		net.Start( "ZeagaPlayerAttendance" )
 			net.WriteBool( false )
-			net.WriteUInt( ply:Team( ), 4 )
+			net.WriteUInt( ply:Team( ), 32 )
 			net.WriteString( ply:Name( ) )
 		net.Broadcast( )
 	end )
@@ -33,7 +32,7 @@ if CLIENT then
 	}
 	net.Receive( "ZeagaPlayerAttendance", function( length )
 		local bArriving = net.ReadBool 	 ()
-		local iTeamId	= net.ReadUInt	 (4)
+		local iTeamId	= net.ReadUInt	 ( 32 )
 		local strName	= net.ReadString ()
 
 		local iEventType = bArriving and TYPE_SPAWN or TYPE_DISCONNECT
