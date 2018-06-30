@@ -20,13 +20,13 @@ local tblRealmActions = SERVER and
             "loadables/server/%s",
             strScript
         ))
-    end
+    end,
     [LOADABLE_CLIENT] = function (strScript)
         AddCSLuaFile (funcFormat (
             "loadables/client/%s",
             strScript
         ))
-    end
+    end,
     [LOADABLE_SHARED] = function (strScript)
         local strFullPath = funcFormat (
             "loadables/server/%s",
@@ -46,13 +46,13 @@ or
             "[loadables] Client has server-side script: %s",
             strScript
         ))
-    end
+    end,
     [LOADABLE_CLIENT] = function (strScript)
         include (funcFormat (
             "loadables/client/%s",
             strScript
         ))
-    end
+    end,
     [LOADABLE_SHARED] = function (strScript)
         include         (strFullPath)
     end 
@@ -67,8 +67,8 @@ _G.loadables = {}
 function loadables:RefreshIndex ()
     loadables.index = {
         {file.Find ("loadables/server/*",  "LUA")},
-        {file.Find ("loadables/client/*",  "LUA")}
-        {file.Find ("loadables/*",         "LUA")},
+        {file.Find ("loadables/client/*",  "LUA")},
+        {file.Find ("loadables/*",         "LUA")}
     }
 
     return loadables.index
