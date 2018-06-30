@@ -58,6 +58,7 @@ hook.Add ("Think","luadev_cmdsinit",function()
                     local ret, strError = callback (calling_ply, strScript)
                     if not ret and isstring (strError) then
                         calling_ply:Notify (("Runtime Error: %s"):format (strError), NOTIFY_ERROR, 5)
+                        calling_ply:Notify (("%s"):format (strScript), NOTIFY_ERROR, 5)
                     end
 
                     easylua.Start (calling_ply)
@@ -65,7 +66,9 @@ hook.Add ("Think","luadev_cmdsinit",function()
                 "!" .. cmd
             )
             objCommand:addParam         ({
-                type = ULib.cmds.StringArg
+                type = ULib.cmds.StringArg,
+                hint="command",
+                ULib.cmds.takeRestOfLine
             })
             objCommand:defaultAccess    (ULib.ACCESS_SUPERADMIN)
         end

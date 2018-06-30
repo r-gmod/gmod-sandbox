@@ -29,7 +29,7 @@ local tblRealmActions = SERVER and
     end,
     [LOADABLE_SHARED] = function (strScript)
         local strFullPath = funcFormat (
-            "loadables/server/%s",
+            "loadables/%s",
             strScript
         )
 
@@ -54,7 +54,10 @@ or
         ))
     end,
     [LOADABLE_SHARED] = function (strScript)
-        include         (strFullPath)
+        include (funcFormat (
+            "loadables/%s",
+            strScript
+        ))
     end 
 }
 
