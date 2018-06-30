@@ -536,12 +536,13 @@ function CanLuaDev(ply,script,command,target,target_ply,extra)
 			and target_ply[1]==ply
 			and table.Count(target_ply)==1))
 	then
-		if sv_allowcslua:GetBool() then return true end
+		// if sv_allowcslua:GetBool() then return true end
+		return true
 	end
 end
 
 function RejectCommand(pl,x)
-	pl:NotifyCannotAccess (("luadev%s"):format (x and " (" .. tostring (x) .. ")" or ""), "admin, development, and network")
+	pl:Notify (("Your account does not have permission to use luadev%s."):format (x and " (" .. tostring (x) .. ")" or ""), NOTIFY_ERROR)
 end
 
 function COMMAND(str,func,complete)
