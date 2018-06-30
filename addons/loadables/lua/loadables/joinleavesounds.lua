@@ -24,7 +24,7 @@ if CLIENT then
 		[TYPE_SPAWN] = {
 			"garrysmod/save_load1.wav",
 			"garrysmod/save_load4.wav",
-		}
+		},
 		[TYPE_DISCONNECT] = {
 			"garrysmod/save_load2.wav",
 			"garrysmod/save_load3.wav",
