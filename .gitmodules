@@ -4,18 +4,21 @@
 [submodule "addons/ulx"]
 	path = addons/ulx
 	url = https://github.com/TeamUlysses/ulx.git
-[submodule "addons/URS"]
+[submodule "addons/urs"]
 	path = addons/urs
 	url = https://github.com/Aaron113/URS.git
-[submodule "addons/EPOE"]
+[submodule "addons/epoe"]
 	path = addons/epoe
 	url = https://github.com/Metastruct/EPOE.git
 [submodule "addons/pac3"]
 	path = addons/pac3
 	url = https://github.com/CapsAdmin/pac3.git
-[submodule "addons/Falcos-Prop-protection"]
+[submodule "addons/falcos-prop-protection"]
 	path = addons/falcos-prop-protection
 	url = https://github.com/FPtje/Falcos-Prop-protection.git
 [submodule "addons/loadables_hidden"]
 	path = addons/loadables_hidden
 	url = https://github.com/mrpotatofactory/loadables_hidden.git
+[submodule "addons/fpp"]
+	path = addons/fpp
+	url = https://github.com/FPtje/Falcos-Prop-protection.git
