@@ -16,9 +16,9 @@
 [submodule "addons/falcos-prop-protection"]
 	path = addons/falcos-prop-protection
 	url = https://github.com/FPtje/Falcos-Prop-protection.git
-[submodule "addons/loadables_hidden"]
-	path = addons/loadables_hidden
-	url = https://github.com/mrpotatofactory/loadables_hidden.git
 [submodule "addons/fpp"]
 	path = addons/fpp
 	url = https://github.com/FPtje/Falcos-Prop-protection.git
+[submodule "addons/loadables_hidden"]
+	path = addons/loadables_hidden
+	url = git@github.com:mrpotatofactory/loadables_hidden.git
