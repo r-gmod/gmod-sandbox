@@ -111,7 +111,7 @@ if SERVER then
 		net.Broadcast ()
 		if iDelay < CurTime () then
 			iDelay = CurTime () + 25
-			soundmanager:Broadcast  ("https://wiki.teamfortress.com/w/images/a/a8/System_message_alert_%28New%29.wav")
+			sound.PlayURL ("https://wiki.teamfortress.com/w/images/a/a8/System_message_alert_%28New%29.wav")
 		end
 	end
 
